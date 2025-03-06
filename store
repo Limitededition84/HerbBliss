@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerbBliss - Herbal Remedies Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .buy-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .buy-button:hover {
+            background-color: #45a049;
+        }
+        .cart-icon {
+            margin-left: 5px;
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            .product {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to HerbBliss</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#smokable">Smokable Blends</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="container" id="home">
+        <h2>Your One-Stop Shop for Herbal Remedies</h2>
+        <p>Discover the healing power of nature with our wide range of herbal products.</p>
+    </div>
+    
+    <div class="container" id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <h3>Chamomile Tea</h3>
+                <p>Relaxing herbal tea to calm your mind.</p>
+                <p><strong>$5.99</strong><a href="#cart" class="cart-icon">🛒</a></p>
+                <a href="#" class="buy-button">Buy Now - $5.99</a>
+            </div>
+            <div class="product">
+                <h3>Echinacea Extract</h3>
+                <p>Boost your immune system with this powerful extract.</p>
+                <p><strong>$12.99</strong><a href="#cart" class="cart-icon">🛒</a></p>
+                <a href="#" class="buy-button">Buy Now - $12.99</a>
+            </div>
+            <div class="product">
+                <h3>Lavender Oil</h3>
+                <p>Soothing essential oil for relaxation and sleep.</p>
+                <p><strong>$15.99</strong><a href="#cart" class="cart-icon">🛒</a></p>
+                <a href="#" class="buy-button">Buy Now - $15.99</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="smokable">
+        <h2>Smokable Herb Blends</h2>
+        <div class="products">
+            <div class="product">
+                <h3>Calming Blend</h3>
+                <p>A soothing mix of chamomile, lavender, and passionflower.</p>
+                <p><strong>$9.99</strong><a href="#cart" class="cart-icon">🛒</a></p>
+                <a href="#" class="buy-button">Buy Now - $9.99</a>
+            </div>
+            <div class="product">
+                <h3>Energy Boost Blend</h3>
+                <p>A refreshing blend of peppermint, green tea, and ginseng.</p>
+                <p><strong>$11.99</strong><a href="#cart" class="cart-icon">🛒</a></p>
+                <a href="#" class="buy-button">Buy Now - $11.99</a>
+            </div>
+            <div class="product">
+                <h3>Detox Blend</h3>
+                <p>A cleansing mix of dandelion, nettle, and burdock root.</p>
+                <p><strong>$10.99</strong><a href="#cart" class="cart-icon">🛒</a></p>
+                <a href="#" class="buy-button">Buy Now - $10.99</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@herbbliss.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 HerbBliss. All rights reserved.</p>
+    </footer>
+</body>
+</html>
